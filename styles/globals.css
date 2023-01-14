@@ -1,3 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --primary: #d87d4a;
+  --active: #fbaf85;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  cursor: pointer;
+  background-color: var(--primary);
+  border: unset;
+  color: white;
+  width: 160px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: var(--active);
+}

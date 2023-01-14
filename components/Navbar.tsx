@@ -1,5 +1,8 @@
 import Link from "next/link";
 import React from "react";
+import style from "../styles/navbar.module.css";
+import logoImage from "../assets/shared/desktop/logo.svg";
+import Image from "next/image";
 
 const LINKS = [
   { href: "#", text: "home" },
@@ -10,13 +13,15 @@ const LINKS = [
 
 function Navbar() {
   return (
-    <nav className="justify-around flex bg-black text-white h-10 items-center ">
-      <div>audiophile</div>
+    <nav className={style.nav}>
+      <div>
+        <Image src={logoImage} alt="logo" />
+      </div>
 
-      <ul className="align-middle uppercase flex gap-6 ">
+      <ul className={style.ul}>
         {LINKS.map((link) => {
           return (
-            <li className="hover:text-primary">
+            <li className={style.li}>
               <Link href={link.href}>{link.text}</Link>{" "}
             </li>
           );

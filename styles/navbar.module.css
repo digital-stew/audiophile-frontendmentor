@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #979797;
+  background-color: #141414;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-inline: 10rem;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  left: 10rem;
+  right: 10rem;
+  background-color: white;
+  opacity: 0.2;
+}
+.ul {
+  vertical-align: middle;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.li * {
+  text-decoration: none;
+  color: white;
+}
+.li:hover * {
+  color: var(--primary);
+}
