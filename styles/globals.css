@@ -19,7 +19,61 @@
   line-height: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: all 200ms ease-in-out;
 }
 .btn:hover {
   background-color: var(--active);
+}
+
+.btn2 {
+  cursor: pointer;
+  background-color: white;
+  border: unset;
+  border: thin solid black;
+  color: black;
+  width: 160px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+.btn2:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn3 {
+  border: unset;
+  cursor: pointer;
+  background-color: unset;
+  position: relative;
+  width: 57px;
+  display: flex;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.btn3::after {
+  content: "";
+  color: var(--primary);
+
+  margin-left: 0.5rem;
+  height: 100%;
+  width: 10px;
+  background-image: url("../assets/shared/desktop/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 200ms ease-in-out;
+}
+.btn3:hover {
+  color: var(--primary);
+}
+.btn3:hover::after {
+  transform: translateX(5px);
 }
