@@ -1,0 +1,6 @@
+.product {
+  border: thin solid black;
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
