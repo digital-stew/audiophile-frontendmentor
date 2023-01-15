@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import style from "../styles/navbar.module.css";
 import logoImage from "../assets/shared/desktop/logo.svg";
+import shoppingCartImage from "../assets/shared/desktop/icon-cart.svg";
 import Image from "next/image";
 
 const LINKS = [
@@ -28,7 +29,9 @@ function Navbar() {
         })}
       </ul>
 
-      <div>S</div>
+      <div>
+        <Image src={shoppingCartImage} alt="shopping cart" />
+      </div>
     </nav>
   );
 }

@@ -27,7 +27,7 @@
 
 .btn2 {
   cursor: pointer;
-  background-color: white;
+  background-color: transparent;
   border: unset;
   border: thin solid black;
   color: black;
